@@ -1,0 +1,86 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CallSummaryReport",
+  "type": "object",
+  "properties": {
+    "Thresh Sales System Card": {
+      "type": "object",
+      "properties": {
+        "Core Problem / Pain Point": { "type": "string" },
+        "Use Case & Key Features": { "type": "string" },
+        "Why They Want to Buy": { "type": "string" },
+        "Sales Strategy": { "type": "string" },
+        "Blockers & Risks": { "type": "string" },
+        "Feature Requests": { "type": "string" },
+        "Budget & Pricing": { "type": "string" },
+        "People": { "type": "string" },
+        "Personal Info": { "type": "string" },
+        "Decision Process": { "type": "string" },
+        "Company Profile": { "type": "string" },
+        "Timeline": { "type": "string" },
+        "Trial Info": { "type": "string" },
+        "Next Steps": { "type": "string" }
+      },
+      "required": [
+        "Core Problem / Pain Point",
+        "Use Case & Key Features",
+        "Why They Want to Buy",
+        "Sales Strategy",
+        "Blockers & Risks",
+        "Feature Requests",
+        "Budget & Pricing",
+        "People",
+        "Personal Info",
+        "Decision Process",
+        "Company Profile",
+        "Timeline",
+        "Trial Info",
+        "Next Steps"
+      ]
+    },
+    "Value Prop Deck": {
+      "type": "object",
+      "properties": {
+        "What does this customer do?": { "type": "string" },
+        "Current Processes": { "type": "string" },
+        "Failure States": { "type": "string" },
+        "Goals & Initiatives": { "type": "string" },
+        "Onboarding process": { "type": "string" },
+        "Procurement process": { "type": "string" },
+        "Key Dates": { "type": "string" },
+        "Pricing & Budget": { "type": "string" }
+      },
+      "required": [
+        "What does this customer do?",
+        "Current Processes",
+        "Failure States",
+        "Goals & Initiatives",
+        "Onboarding process",
+        "Procurement process",
+        "Key Dates",
+        "Pricing & Budget"
+      ]
+    },
+    "Sales Improvement": {
+      "type": "object",
+      "properties": {
+        "Sales Call Feedback": { "type": "string" }
+      },
+      "required": ["Sales Call Feedback"]
+    },
+    "Call Data": {
+      "type": "object",
+      "properties": {
+        "Company Name and Attendees": { "type": "string" },
+        "Recording Share URL": { "type": "string" }
+      },
+      "required": ["Company Name and Attendees", "Recording Share URL"]
+    }
+  },
+  "required": [
+    "Thresh Sales System Card",
+    "Value Prop Deck",
+    "Sales Improvement",
+    "Call Data"
+  ]
+}
